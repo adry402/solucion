@@ -4,7 +4,7 @@ import config
 
 allApiData = config.apisToCall
 
-# This service calls the APIs using the requests module
+# Este servicio llama a la API usando el metodo request
 
 def callApi(url, id_ML):
     try:

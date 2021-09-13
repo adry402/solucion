@@ -9,6 +9,10 @@ allApiData = config.apisToCall
 # Atributos a consultar en cada API
 reqs = json.loads(config.to_query)
 
+# Recibe el numero de API segun la lista en el archivo config
+# num_api: Segun el orden en la lista de apis en config
+# id_search: el ID para busqueda en la API
+# serch_new_var; si se quiere buscar los id para busqueda en otras API
 
 def get_tags(num_api, id_search, serch_new_var):
     lst_tags = []

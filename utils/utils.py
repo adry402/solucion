@@ -4,6 +4,7 @@ import config
 from sqlalchemy import create_engine
 import pandas as pd
 
+# Rutas de los archivos
 basedir = os.path.abspath(os.path.dirname(__file__))
 output_file = os.path.join(basedir, 'static/'+ 'salida_temp.txt') 
 bdd_name = os.path.join(basedir, 'static/'+ config.name_bdd)

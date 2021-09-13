@@ -6,13 +6,16 @@ import config
 import os
 
 app = Flask(__name__)
+
+# Para probar la pagina
 app.config["DEBUG"] = config.dev
 
+# Rutas de los archivos
 basedir = os.path.abspath(os.path.dirname(__file__))
 data_file = os.path.join(basedir, 'static/'+ config.file_name)
 write_file = os.path.join(basedir, 'static/'+ 'salida_temp.txt') 
 
-
+# Recorre el archivo inicial y devuelve los registros de API
 def work_file(data_file):
     with open(data_file, encoding= config.encoding) as infile:
         next(infile)
