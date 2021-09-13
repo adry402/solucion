@@ -1,6 +1,7 @@
 # To run this project
 
 Instalar las dependiencias con "pip install -r requirements.txt"
+
 Correr el proyecto con "python app.py"
 
 La API implementa un endpoint( y algunos de verificacion):
